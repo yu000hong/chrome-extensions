@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Stackoverflow speedup",
+  "description": "Stackoverflow中使用的jQuery文件存在于google域下，被墙导致Stackoverflow页面的加载也被阻塞了，此插件用来重定向此文件",
+  "version": "1.0",
+  "browser_action": {"default_icon": "icon.png"},
+  "icons":{
+    "128":"icon.png"
+  },
+  "permissions":["webRequest", "webRequestBlocking","*://stackoverflow.com/*","*://*.googleapis.com/*"],
+  "background":{
+    "scripts":["background.js"]
+  }
+}
