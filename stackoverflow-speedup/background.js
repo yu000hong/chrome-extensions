@@ -3,7 +3,7 @@ var targetUrl = 'https://code.jquery.com/jquery-3.2.1.min.js';
 // console.log("hello ...");
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
-    	if(details.url == sourceUrl){
+    	if(details.url.endsWith('jquery.min.js') && details.url.includes('google')){
     		return {redirectUrl:targetUrl};
     	}else{
     		return {cancel:false};

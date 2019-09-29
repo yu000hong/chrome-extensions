@@ -7,7 +7,7 @@
   "icons":{
     "128":"icon.png"
   },
-  "permissions":["webRequest", "webRequestBlocking","*://stackoverflow.com/*","*://*.googleapis.com/*"],
+  "permissions":["webRequest", "webRequestBlocking","*://stackoverflow.com/*","*://*.googleapis.com/*","*://gunicorn.org/*"],
   "background":{
     "scripts":["background.js"]
   }
